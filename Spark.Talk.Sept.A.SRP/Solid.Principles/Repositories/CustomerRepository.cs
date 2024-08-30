@@ -4,10 +4,10 @@ using Solid.Principles.Models;
 namespace Solid.Principles.Repositories;
 public class CustomerRepository
 {
-    private CustomerDataStore _customerDataStore;
+    private readonly CustomerDataStore _customerDataStore;
+    private readonly string _filePath = "c:/solid/log.txt";
 
-    public CustomerRepository() =>
-        _customerDataStore = new CustomerDataStore();
+    public CustomerRepository() => _customerDataStore = new CustomerDataStore();
 
     public void AddCustomer(Customer customer)
     {
@@ -15,9 +15,22 @@ public class CustomerRepository
         {
             _customerDataStore.Customers.Add(customer);
         }
-        catch (Exception ex)
+        catch (Exception exception)
         {
-            File.WriteAllText("c:/solid/log.txt", ex.Message);
+            File.WriteAllText(_filePath, exception.Message);
+        }
+    }
+
+    public void RemoveCustomer(Guid id)
+    {
+        try
+        {
+            var customer = _customerDataStore.Customers.FirstOrDefault(x => x.Id == id);
+            if (customer != null) _customerDataStore.Customers.Remove(customer);
+        }
+        catch (Exception exception)
+        {
+            File.WriteAllText(_filePath, exception.Message);
         }
     }
 }
