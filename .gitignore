@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Spark.Talk.Sept.A.SRP/.vs/Spark.Talk.Sept/FileContentIndex
+/Spark.Talk.Sept.A.SRP/.vs/Spark.Talk.Sept/DesignTimeBuild
+/Spark.Talk.Sept.A.SRP/.vs/Spark.Talk.Sept/v17
+/Spark.Talk.Sept.A.SRP/Solid.Principles/bin/Debug/net8.0
+/Spark.Talk.Sept.A.SRP/Solid.Principles/obj/project.assets.json
+/Spark.Talk.Sept.A.SRP/Solid.Principles/obj/project.nuget.cache
+/Spark.Talk.Sept.A.SRP/Solid.Principles/obj/Solid.Principles.csproj.nuget.dgspec.json
+*.dll
+/Spark.Talk.Sept.A.SRP/Solid.Principles/obj/Debug/net8.0
+/.vs/spark.talk/v17
