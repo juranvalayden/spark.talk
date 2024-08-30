@@ -12,3 +12,6 @@
 *.dll
 /Spark.Talk.Sept.A.SRP/Solid.Principles/obj/Debug/net8.0
 /.vs/spark.talk/v17
+/.vs
+/Spark.Talk.Sept/.vs/Spark.Talk.Sept/FileContentIndex
+/Spark.Talk.Sept.A.SRP/.vs/ProjectEvaluation
